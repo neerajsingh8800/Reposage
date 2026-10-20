@@ -1,0 +1,51 @@
+# Python
+venv/
+**/venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Environment / secrets
+.env
+**/.env
+
+# ChromaDB / generated vector database
+chroma_db/
+**/chroma_db/
+
+# Node / React
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+**/build/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Evaluation artifacts
+evaluation_results.json
+
+
+# Environment examples: allow safe templates only
+.env.*
+!.env.example
+**/.env.*
+!**/.env.example
+
+# Local repository clones and runtime metadata
+backend/repo_storage/
+backend/repo_store.json
+
+# Python virtual environments
+.venv/
+**/.venv/

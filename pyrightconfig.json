@@ -1,0 +1,19 @@
+{
+  "venvPath": ".",
+  "venv": "venv",
+  "extraPaths": [
+    ".",
+    "venv/Lib/site-packages"
+  ],
+  "include": [
+    "backend",
+    "ingestion",
+    "sample_repo"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "venv",
+    "backend/repo_storage"
+  ]
+}

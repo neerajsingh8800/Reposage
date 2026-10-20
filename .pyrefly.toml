@@ -1,0 +1,11 @@
+search-path = [
+    ".",
+    "ingestion",
+    "backend"
+]
+site-package-path = [
+    "venv/Lib/site-packages",
+    "d:/Users/reposage_complete/reposage_final/venv/Lib/site-packages",
+    "C:/Users/HP/AppData/Local/Programs/Python/Python312/Lib/site-packages"
+]
+python-interpreter-path = "d:/Users/reposage_complete/reposage_final/venv/Scripts/python.exe"
