@@ -49,3 +49,8 @@ backend/repo_store.json
 # Python virtual environments
 .venv/
 **/.venv/
+
+/tree_sitter/
+/tree_sitter_python/
+/tree_sitter_javascript/
+/tree_sitter_typescript/
