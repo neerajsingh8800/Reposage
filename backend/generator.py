@@ -11,7 +11,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 from groq import Groq
 
-from ingestion.embedder import collection_exists, embed_chunks
 from ingestion.graph_builder import (
     _find_matches,
     _qualified_name,
@@ -503,9 +502,6 @@ def prepare_query_context(
         chunks = chunk_repo(repo_path, verbose=False)
         if not chunks:
             return None
-
-        if not collection_exists(repo_id):
-            embed_chunks(chunks, repo_id)
 
         index = HybridIndex(chunks, repo_id, repo_path=repo_path)
         arch_summary = _build_repo_architecture_summary(chunks, repo_path=repo_path)

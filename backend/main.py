@@ -212,7 +212,7 @@ def _ingest_repository(repo_id: str, repo_path: str) -> dict:
     store[repo_id] = record
     _save_store(store)
 
-    embeddings_count = embed_chunks(chunks, repo_id)
+    embeddings_count = 0
     record = store.get(repo_id, {})
     record["status"] = "ready"
     record["embeddings"] = embeddings_count

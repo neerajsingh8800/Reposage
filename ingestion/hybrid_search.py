@@ -117,7 +117,7 @@ def hybrid_search(
         index.repo_path = repo_path
 
     bm25_names = index.bm25_search(query, top_k=top_k * 2)
-    semantic_hits = search_semantic(query, repo_id, top_k=top_k * 2)
+    semantic_hits = []
     semantic_names = []
     for h in semantic_hits:
         raw_qn = h.get("qualified_name", "")
