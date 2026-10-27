@@ -41,8 +41,8 @@ https_only = os.getenv("HTTPS_ONLY", "false").lower() in ("true", "1", "yes")
 app.add_middleware(
     SessionMiddleware,
     secret_key=session_secret,
-    same_site="lax",
-    https_only=https_only,
+    same_site="none",
+    https_only=True,
     max_age=60 * 60 * 24 * 7,
 )
 
