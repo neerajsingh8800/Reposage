@@ -82,7 +82,7 @@ def embed_chunks(chunks: list[CodeChunk], repo_id: str) -> int:
             "parent_class": chunk.parent_class or "",
         })
 
-    BATCH = 100
+    BATCH = 16
     for start in range(0, len(ids), BATCH):
         end = start + BATCH
         collection.add(ids=ids[start:end], documents=documents[start:end], metadatas=metadatas[start:end])
